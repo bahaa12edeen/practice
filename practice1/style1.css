@@ -1,9 +1,11 @@
 .first{
-    width: 80%;
-    height: 60vh;
+    /* box-sizing: border-box; */
+    /* width: 30%;
+    height: 30%; */
+    padding: 15%;
     background-color: black;
     color: white;
-    font-size: clamp( 29.4px, 5vw, 50px);
+    /* font-size: clamp( 29.4px, 5vw, 50px); */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,6 +15,3 @@
     align-items: center;
 }
 
-.second{
-    width: fit-content;
-}

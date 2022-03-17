@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    height: calc(100vh - 2px);
+    background-image: url("../image/abc.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 139, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.father{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 30.33%);
+    row-gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9{
+    width: 30.33%;
+    min-height: 100px;
+    padding: 20px 40px;
+    border-radius: 100%;
+    background-color: teal;
+   margin: 30px auto;
+}
+
+.d1{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.d2{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.d3{
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.d4{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.d5{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.d6{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.d7{
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.d8{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.d9{
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+
+
+.d1:hover, .d2:hover, .d3:hover, .d4:hover, .d5:hover, .d6:hover, .d7:hover, .d8:hover, .d9:hover{
+    background-color: rgba(0, 0, 0, 0)
+}

@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: rgb(27, 30, 36);
+}
+
+.sh{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /* z-index: 10; */
+    background-image: url(../image/download.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.sh::before{
+    content: "";
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/hexagon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #0000ff59; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+
+    z-index: 1;
+}
+
+.co{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* background-color: #0000ff59; */
+    padding:  0 10%;
+    z-index: 3;
+}
+
+.sh:hover .co{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+/* .co::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0000ff59;
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/download.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+} */
+
+/* .image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/hexagon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+} */
+
+.butt1{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategrey;
+    border-radius: 30% ;
+    user-select: none;
+    cursor: pointer;
+    border: 2px solid slategrey;
+}
+
+.butt1:hover{
+    background-color: rgb(55, 63, 71);
+}
+
+.butt1:active{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sh1::before{
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/round.png);
+}
+
+.sh2::before{
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/hexagon.png);
+}
+
+.sh3::before{
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/pentagon.png);
+}
+
+.sh4::before{
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/round.png);
+}
+
+.sh5::before{
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/hexagon.png);
+}
+
+.sh6::before{
+    background-image: url(http://www.queness.com/resources/html/masking-images-with-shape/pentagon.png);
+}
+
+.sh1{
+    background-image: url("../image/download.jpg");
+}
+
+.sh2{
+    background-image: url("../image/imalges.jpg");
+}
+
+.sh3{
+    background-image: url("../image/images.jpg");
+}
+
+.sh4{
+    background-image: url("../image/imhages.jpg");
+}
+
+.sh5{
+    background-image: url("../image/imavges.jpg");
+}
+
+.sh6{
+    background-image: url("../image/imkages.jpg");
+}
+
+
+/*******************************************************************************************************/
+/*******************************************************************************************************/
+
+.father{
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.father .hexagon{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px 20px 70px;
+}
+
+.father .circle{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px 20px 70px;
+}
+
+.father .pentagon{
+    
+    width: 400px;
+    height: 400px;
+    margin: 50px 20px 70px;
+}
+
+
+
+.father .hexagon .shape{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(0 22%, 50% 0, 100% 22%, 100% 78%, 50% 100%, 0 78%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.father .circle .shape{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    clip-path: circle(46% at 50% 50%);
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.father .pentagon .shape{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.shape:hover .content{
+    display: flex;
+}
+
+.content{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: #0000ff59;
+    padding: 10px;
+}
+
+.butt{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategrey;
+    border-radius: 30% ;
+    user-select: none;
+    cursor: pointer;
+    border: 2px solid slategrey;
+}
+
+.butt:hover{
+    background-color: rgb(55, 63, 71);
+}
+
+.butt:active{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: black;
+}
